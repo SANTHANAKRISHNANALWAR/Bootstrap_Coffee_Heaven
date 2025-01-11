@@ -19,7 +19,7 @@
         <div class="navContainer fixed-top bg-light shadow">
             <div class="navBar container">
                 <div class="navBody g-0">
-                    <nav class="navBlock navbar navbar-expand-md py-3 fs-5">
+                    <nav class="navBlock navbar navbar-expand-md py-3 fs-5" id="navBlock">
 
                         <figure class="navLogo my-auto">
                             <img class="navbar-brand m-auto" height="50" src="./assets/images/logo.png" alt="logo">
@@ -47,33 +47,35 @@
                 </div>
             </div>
         </div>
-
-        <header>
-            <div class="heroSectionContainer" id="home">
-                <div class="heroSection">
-                    <div class="heroSectionBody">
-                        <div class="heroSetionBlock card rounded-0 border-0">
-                            <img class="card-img border-0 rounded-0" src="./assets/images/hero-bg.jpg" height="650" alt="Card image">
-                            <div class="position-absolute bg-white bg-gradient top-0 start-0 end-0 bottom-0 bg-opacity-25 z-1">
-                            </div>
-                            <div class="heroSectionBodyText card-img-overlay rounded-0 border-0 container z-3 top-50 translate-middle-y">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 text-center">
-                                        <h1 class="">Coffee Heaven</h1>
-                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ut Officia, Accusantium
-                                            Mollitia
-                                            Laudantium Dolorum Dolore.</p>
-                                        <button class="btn btn-lg bg-coffee mx-auto rounded-0" type="button" onclick="location.href='#about'">About Us</button>
-                                    </div>
+        <div class="heroSectionContainer" id="home">
+            <div class="heroSection">
+                <div class="heroSectionBody">
+                    <div class="heroSetionBlock card rounded-0 border-0">
+                        <img class="card-img border-0 rounded-0" src="./assets/images/hero-bg.jpg" height="650"
+                            alt="Card image">
+                        <div
+                            class="position-absolute bg-white bg-gradient top-0 start-0 end-0 bottom-0 bg-opacity-25 z-1">
+                        </div>
+                        <div
+                            class="heroSectionBodyText card-img-overlay rounded-0 border-0 container z-3 top-50 translate-middle-y">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 text-center">
+                                    <h1 class="">Coffee Heaven</h1>
+                                    <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ut Officia,
+                                        Accusantium
+                                        Mollitia
+                                        Laudantium Dolorum Dolore.</p>
+                                    <button class="btn btn-lg bg-coffee mx-auto rounded-0" type="button"
+                                        onclick="location.href='#about'">About Us</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
     </header>
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
         <section class="cupContainer" id="about">
             <div class="cup container py-4">
                 <div class="cupBody row align-items-center justify-content-center">
@@ -98,7 +100,7 @@
             </div>
         </section>
 
-        <section class="facilityContainer">
+        <section class="facilityContainer" id="">
             <div class="facility container py-4">
                 <div class="facilityHead row align-items-center justify-content-center mb-4">
                     <div class="facilityHeadSection col">
@@ -379,9 +381,9 @@
                 <div class="aboutBody row">
                     <div class="aboutSection col-lg-3 col-md-6">
                         <div class="aboutHeadCard text-center">
-                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 bg-dark rounded-circle">
-                                <div class="row bg-coffee py-3 rounded-circle m-auto">
-                                <i class="fa-solid fa-envelope fs-3 m-auto"></i>
+                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 rounded-circle">
+                                <div class="bg-coffee py-3 rounded-circle m-auto">
+                                    <i class="fa-solid fa-envelope fs-3 m-auto"></i>
                                 </div>
                             </div>
                             <div class="aboutHeadCardText">
@@ -393,9 +395,9 @@
                     </div>
                     <div class="aboutSection col-lg-3 col-md-6">
                         <div class="aboutHeadCard text-center">
-                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 bg-dark rounded-circle">
-                                <div class="row bg-coffee py-3 rounded-circle m-auto">
-                                <i class="fa-solid fa-clock fs-3 m-auto"></i>
+                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 rounded-circle">
+                                <div class="bg-coffee py-3 rounded-circle m-auto">
+                                    <i class="fa-solid fa-clock fs-3 m-auto"></i>
                                 </div>
                             </div>
                             <div class="aboutHeadCardText">
@@ -406,9 +408,9 @@
                     </div>
                     <div class="aboutSection col-lg-3 col-md-6">
                         <div class="aboutHeadCard text-center">
-                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 bg-dark rounded-circle">
-                                <div class="row bg-coffee py-3 rounded-circle m-auto">
-                                <i class="fa-solid fa-location-dot fs-3 m-auto"></i>
+                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 rounded-circle">
+                                <div class="bg-coffee py-3 rounded-circle m-auto">
+                                    <i class="fa-solid fa-location-dot fs-3 m-auto"></i>
                                 </div>
                             </div>
                             <div class="aboutHeadCardText">
@@ -419,9 +421,9 @@
                     </div>
                     <div class="aboutSection col-lg-3 col-md-6">
                         <div class="aboutHeadCard text-center">
-                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 bg-dark rounded-circle">
-                                <div class="row bg-coffee py-3 rounded-circle m-auto">
-                                <i class="fa-solid fa-phone fs-3 m-auto"></i>
+                            <div class="aboutHeadCardIcon w-25 m-auto mb-3 rounded-circle">
+                                <div class="bg-coffee py-3 rounded-circle m-auto">
+                                    <i class="fa-solid fa-phone fs-3 m-auto"></i>
                                 </div>
                             </div>
                             <div class="aboutHeadCardText">
@@ -447,41 +449,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Overlay</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="card bg-dark text-white">
-        <img class="card-img" src="./assets/images/hero-bg.jpg" alt="Card image">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-            <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
-
-</html> -->
