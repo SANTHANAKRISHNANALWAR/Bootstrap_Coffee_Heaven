@@ -34,3 +34,9 @@ h2 {
     height: 4rem !important;
     width: 4rem !important;
 }
+
+@media(width < 576px){
+    .heroSectionContainer{
+        padding-top: 5rem;
+    }
+}
